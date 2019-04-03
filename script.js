@@ -1,6 +1,6 @@
 function spinalCase(str) {
   
-  return str.toLowerCase().split(/(?=[A-Z])|[\W_]|\s/).join("-");
+  return str.split(/(?=[A-Z])|[\W_]|\s/).join('-').toLowerCase();
 }
 
 spinalCase('This Is Spinal Tap');
